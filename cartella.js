@@ -10,9 +10,12 @@ const fetchPrex = () => {
     return response.json().then((data) => {
       console.log(data);
       const imageElements = data.photos.map((photo) => {
-        return `<img src="${photo.src.medium}" alt="${photo.photographer}"/>
+        return `<div class="col-4 col-md-6 col-lg-2"
+        <div class="card">
+        <img src="${photo.src.medium}" alt="${photo.photographer}"/> 
         <h3>${photo.photographer}<h3>
-        `;
+        </div>
+        </div>`;
       });
       container.innerHTML = imageElements.join("");
     });
