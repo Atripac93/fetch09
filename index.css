@@ -1,10 +1,14 @@
 img{
-    width: 100%;
-    height: auto;
+    width: 130%;
+    height: 60%;
     transition: 1s;
     
 }
 img:hover{
     transform: scale(1.1);
     transition: 1s;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
 }
